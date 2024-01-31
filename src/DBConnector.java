@@ -13,7 +13,7 @@ public class DBConnector {
 		Connection con = null;
 
 		try {
-			Class.forName(driverNane);
+			Class.forName(driverName);
 			con = DriverManager.getConnection(url, user, password);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
